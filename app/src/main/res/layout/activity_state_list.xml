@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StateList">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/state_list"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:elevation="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        >
+
+            <TextView
+                android:id="@+id/state_name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:fontFamily="monospace"
+                android:text="State_Name"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+            <TextView
+                android:layout_marginTop="70dp"
+                android:id="@+id/state_active"
+                android:background="@drawable/active"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:fontFamily="monospace"
+                android:text="State_active"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:layout_marginTop="130dp"
+                android:id="@+id/state_death"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:fontFamily="monospace"
+                android:text="State_death"
+                android:background="@drawable/death"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:background="@drawable/recovered"
+                android:layout_marginTop="190dp"
+                android:id="@+id/state_recovered"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:fontFamily="monospace"
+                android:text="State_recovered"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

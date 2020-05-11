@@ -56,11 +56,11 @@ class StateList : AppCompatActivity() {
         }
 
         private fun jsonResult(jsonString: String){
-            val jsonObject= JSONObject(jsonString).getJSONObject("regional")
+            val jsonObject= JSONObject(jsonString).getJSONObject("data").getJSONArray("regional")
             val list=ArrayList<StateData>()
             var i=0
             while (i<jsonObject.length()){
-                val jsonObject1=jsonObject.getJSONObject(i.toString())
+                val jsonObject1=jsonObject.getJSONObject(i)
                 list.add(
                     StateData(
                         jsonObject1.getString("loc"),
